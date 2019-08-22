@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>The 3 Game</title>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<script src="/socket.io/socket.io.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./js/game.js"></script>
+
+<body>
+
+  <div class="alert alert-danger" role="alert">Test</div>
+  <div class="container-fluid" style="height:100vh;">
+    <!-- HOME -->
+    <div id="home" class="row h-100">
+      <div class="left col-md-6 d-flex justify-content-center">
+        <div class="card-group mb-0 col-md-9 col-sm-12 my-auto">
+          <div class="card p-4 shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h1 class="mt-4">New game</h1>
+              <form id="startGame">
+                <div class=" input-group mb-3 mt-4">
+                  <input type="text" id="nickname" class="form-control" placeholder="Nickname">
+                </div>
+                <div class="input-group mb-4">
+                  <input type="text" id="startValue" class="form-control" placeholder=" Seed Number (Optional)">
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button class="btn btn-block btn-primary">Start a Game</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right col-md-6 d-flex justify-content-center">
+        <div class="col-md-10 col-sm-12 my-auto">
+          <h1 class="text-center">Join an existing game!</h1>
+          <ul id="games" class="justify-content-center"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAME -->
+    <div id="game" class="row h-100">
+      <div class="col-md-12 d-flex">
+        <div class="col-md-12 my-auto mb-4">
+          <h1 class="text-center">The 3 Game</h1>
+          <div id="messages"></div>
+          <div id="options" class="row mt-5">
+            <div class="col-md-4">
+              <button class="option my-3" val="-1">-1</button>
+            </div>
+            <div class="col-md-4">
+              <button class="option my-3" val="0">0</button>
+            </div>
+            <div class="col-md-4">
+              <button class="option my-3" val="1">+1</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

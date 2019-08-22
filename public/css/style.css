@@ -1,0 +1,102 @@
+body {
+  background: #97cecc;
+  font-family: 'Permanent Marker', cursive, sans-serif !important;
+}
+
+/* ------ HOME ------- */
+
+.left {
+  background: #97cecc;
+}
+
+.left h1 {
+  color: #12908e;
+  text-shadow: 2px 2px #c4421a;
+}
+
+.right {
+  background: #ff8000;
+}
+
+.right h1 {
+  color: #fff;
+  text-shadow: 2px 2px #c4421a;
+}
+
+.btn-primary {
+  background: #12908e;
+  text-shadow: 2px 2px #c4421a;
+}
+
+ul#games {
+  list-style-type: none;
+  padding: 0;
+}
+
+.join-game {
+  background: #12908e;
+  border-radius: 25px;
+  border: 0px;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  height: 50px;
+  margin: 10px auto;
+  text-align: center;
+  text-shadow: 2px 2px #c4421a;
+  width: 60%;
+}
+
+/* ------ END HOME ------- */
+
+/* ------ GAME ------- */
+
+#game {
+  background: #97cecc;
+  display: none;
+}
+
+#game h1 {
+  color: #12908e;
+  font-size: 4rem;
+  text-shadow: 2px 2px #c4421a;
+}
+
+#game #messages {
+  animation: blinker 1s linear infinite;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px #c4421a;
+}
+
+#game .option {
+  background: #ff8000;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 100px;
+  height: 300px;
+  line-height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 2px 2px #c4421a;
+  width: 300px;
+}
+
+/* ------ END GAME ------- */
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.alert{
+  display: none;
+  margin: 10px 10%;
+  position: fixed;
+  width: 80%;
+  z-index: 2;
+}

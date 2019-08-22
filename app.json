@@ -1,0 +1,12 @@
+{
+  "name": "The 3 game",
+  "description": "A game with two independent units – the players – communicating with each other using an API.",
+  "repository": "https://github.com/atellezsazo/The-Three-Game",
+  "logo": "https://raw.githubusercontent.com/atellezsazo/The-Three-Game/master/logo.png",
+  "keywords": [
+    "node",
+    "express",
+    "static",
+    "socket.io"
+  ]
+}
