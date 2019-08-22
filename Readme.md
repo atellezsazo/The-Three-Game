@@ -14,6 +14,10 @@ The same rules are applied until one player reaches the number 1(after the divis
 
 - [Demo](https://the-3-game.herokuapp.com/)
 
+
+![Demo](demo.gif)
+
+
 ---
 
 ## Web Sockets Available
